@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cássio Winkler">
+    <meta name="keywords" content="Cássio Winkler">
+    <meta name="author" content="Cássio Winkler">
+    <meta property="og:title" content="Cássio Winkler">
+    <meta property="og:description" content="Entre em contato com Cássio Winkler através deste formulário.">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/C4D12AQFNSjesOK4gvQ/article-cover_image-shrink_720_1280/0/1540176428901?e=2147483647&v=beta&t=l7k-5CR0np3BjzSDTpIzYlMaS3UzJmECsl-i_2_XJXg">
+    <meta property="og:url" content="https://www.linkedin.com/in/cassiowinkler/">
+    <title>Cássio Winkler</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #000000, #003366, #808080);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-control, .btn {
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 5px; /* Reduzido o espaçamento superior do rodapé */
+            padding: 10px 0; /* Ajustado o padding do rodapé */
+            font-size: 14px;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            color: #ffffff;
+            font-size: 24px;
+            margin-left: 10px; /* Ajustado para o ícone */
+        }
+        .social-icons img {
+            width: 35px; /* Aumentado o tamanho do ícone do LinkedIn */
+            height: 35px;
+        }
+        @media (max-width: 576px) {
+            .container {
+                padding: 20px;
+                margin: 50px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contato</h1>
+    <form action="https://formspree.io/f/mvgokqqa" method="POST">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<footer>
+    <div class="social-icons">
+        <span>
+            <a href="mailto:cassio_winkler@outlook.com" style="color: white; text-decoration: none;">cassio_winkler@outlook.com</a>
+        </span>
+        <a href="https://www.linkedin.com/in/cassiowinkler/" target="_blank" title="LinkedIn">
+            <img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png" alt="LinkedIn">
+        </a>
+    </div>
+    <p>&copy; <span id="year"></span> Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 
